@@ -26,12 +26,5 @@ namespace SmartHomeApi.Controllers
             return device;
         }
 
-        [HttpPost]
-        public ActionResult<Device> Post(Device device)
-        {
-            device.Id = devices.Count + 1;
-            devices.Add(device);
-            return CreatedAtAction(nameof(Get), new { id = device.Id }, device);
-        }
     }
 }

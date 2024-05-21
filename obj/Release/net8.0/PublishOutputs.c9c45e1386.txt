@@ -1,0 +1,12 @@
+/var/www/app/SmartHomeAPI
+/var/www/app/appsettings.Development.json
+/var/www/app/appsettings.json
+/var/www/app/SmartHomeAPI.dll
+/var/www/app/SmartHomeAPI.deps.json
+/var/www/app/SmartHomeAPI.runtimeconfig.json
+/var/www/app/SmartHomeAPI.pdb
+/var/www/app/Microsoft.AspNetCore.OpenApi.dll
+/var/www/app/Microsoft.OpenApi.dll
+/var/www/app/Swashbuckle.AspNetCore.Swagger.dll
+/var/www/app/Swashbuckle.AspNetCore.SwaggerGen.dll
+/var/www/app/Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/artemtolst/SmartHomeAPI/SmartHomeAPI.csproj",
         "projectName": "SmartHomeAPI",
         "projectPath": "/home/artemtolst/SmartHomeAPI/SmartHomeAPI.csproj",
-        "packagesPath": "/home/artemtolst/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/artemtolst/SmartHomeAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/artemtolst/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

@@ -6,32 +6,26 @@ namespace SmartHomeApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DevicesController : ControllerBase
+    public class RoomsController : ControllerBase
     {
-        private static List<Device> devices = new List<Device>
+        private static List<Room> rooms = new List<Room>
         {
-            new Device { Id = 1, Name = "Light", IsOn = false },
-            new Device { Id = 2, Name = "Thermostat", IsOn = true }
+            new Room { Id = 1, Name = "Living Room", Devices = new List<Device>() },
+            new Room { Id = 2, Name = "Bedroom", Devices = new List<Device>() }
         };
 
         [HttpGet]
-        public IEnumerable<Device> Get() => devices;
+        public IEnumerable<Room> Get() => rooms;
 
         [HttpGet("{id}")]
-        public ActionResult<Device> Get(int id)
+        public ActionResult<Room> Get(int id)
         {
-            var device = devices.Find(d => d.Id == id);
-            if (device == null)
+            var room = rooms.Find(r => r.Id == id);
+            if (room == null)
                 return NotFound();
-            return device;
+            return room;
         }
 
-        [HttpPost]
-        public ActionResult<Device> Post(Device device)
-        {
-            device.Id = devices.Count + 1;
-            devices.Add(device);
-            return CreatedAtAction(nameof(Get), new { id = device.Id }, device);
-        }
+
     }
 }
